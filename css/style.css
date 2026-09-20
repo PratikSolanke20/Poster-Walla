@@ -122,11 +122,31 @@ h1, h2, h3, h4 {
     text-align: center;
     padding: 0 2rem;
     overflow: hidden;
+    background-image: url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1;
 }
 
 .hero-content {
     z-index: 10;
     max-width: 800px;
+}
+
+.glass-panel {
+    background: rgba(15, 15, 15, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 4rem 3rem;
 }
 
 .hero-title {
